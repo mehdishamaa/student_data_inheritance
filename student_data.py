@@ -11,6 +11,11 @@ class Student():
     def lunch(self):
         print(self.name + " " + "is on lunch")
 
-    def __home(self):
+    def home(self):
         print(self.name + "is at home")
+
+    def student_details(self):
+        print("Student Name:" + " " + self.name)
+        print("Age:" + " " + self.age)
+        print("Course:" + " " + self.course)
 

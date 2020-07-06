@@ -1,29 +1,17 @@
+# First we import the Student class from student_data
+
 from student_data import Student
 
 
 class Devops(Student):
-    def __init__(self, name, age, course, grade):
-        self.name = name
-        self.age = age
-        self.course = course
-        self.grade = grade
-
-# Below we are creating two functions, one to state the student is on lunch and one to state that they are at home.
-
-    def lunch(self):
-        print(self.name + " " + "is on lunch")
-
-    def __home(self):
-        print(self.name + "is at home")
-
-    def student_details(self):
-        print("Student Name:" + " " + self.name)
-        print("Age:" + " " + self.age)
-        print("Course:" + " " + self.course)
-        print("Grade is:" + " " + self.grade)
+    def __init__(self, name, age, course):
+        super().__init__(name, age, course)
 
 
-mehdi = Devops("Mehdi", "21", "DevOps", "9")
+# Above we have used super to inherit functions from student_data.py
+# We don't need to write any functions in this file because they are all inherited.
+
+mehdi = Devops("Mehdi", "21", "DevOps")
 
 print(mehdi.student_details())
 
