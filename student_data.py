@@ -19,3 +19,7 @@ class Student():
         print("Age:" + " " + self.age)
         print("Course:" + " " + self.course)
 
+
+mehdi = Devops("Mehdi", "21", "DevOps")
+print(mehdi.student_details())
+

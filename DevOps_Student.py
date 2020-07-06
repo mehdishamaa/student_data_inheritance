@@ -3,7 +3,7 @@
 from student_data import Student
 
 
-class Devops(Student):
+class DevOps(Student):
     def __init__(self, name, age, course):
         super().__init__(name, age, course)
 
@@ -11,9 +11,9 @@ class Devops(Student):
 # Above we have used super to inherit functions from student_data.py
 # We don't need to write any functions in this file because they are all inherited.
 
-mehdi = Devops("Mehdi", "21", "DevOps")
+m = DevOps("Mehdi", "21", "DevOps")
 
-print(mehdi.student_details())
+print(m.student_details())
 
 
 
