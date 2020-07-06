@@ -14,5 +14,3 @@ class Student():
     def __home(self):
         print(self.name + "is at home")
 
-
-m = Student("Mehdi", "21", "DevOps")

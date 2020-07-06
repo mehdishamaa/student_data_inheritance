@@ -14,5 +14,14 @@ class Devops(Student):
     def __home(self):
         print(self.name + "is at home")
 
+    def student_details(self):
+        print("Student Name:" + " " + self.name)
+        print("Age:" + " " + self.age)
+        print("Course:" + " " + self.course)
 
-m = Student("Mehdi", "21", "DevOps")
+mehdi = Devops("Mehdi", "21", "DevOps")
+
+print(mehdi.student_details())
+
+
+
